@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+input[type="text"] {
+  padding: 10px 20px;
+  width: calc(100% - 100px);
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #ff5733;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff7043;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.delete {
+  cursor: pointer;
+  background: none;
+  border: none;
+  font-size: 16px;
+  color: red;
+}
+
+/* Responsive Design */
+
+/* Mobile Screens: 320px to 414px */
+@media (max-width: 414px) {
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  input[type="text"] {
+    width: calc(100% - 80px);
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
+
+/* Tablet Screens: 768px */
+@media (min-width: 415px) and (max-width: 768px) {
+  .container {
+    max-width: 600px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  input[type="text"] {
+    width: calc(100% - 110px);
+  }
+
+  button {
+    padding: 10px 25px;
+    font-size: 15px;
+  }
+}
+
+/* Desktop Screens: 1024px to 1920px */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 500px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+}
